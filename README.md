@@ -1,4 +1,4 @@
-# loose-version-compare [![Build Status](https://travis-ci.org/bfred-it/loose-version-compare.svg?branch=master)](https://travis-ci.org/bfred-it/loose-version-compare)
+# tiny-version-compare [![Build Status](https://travis-ci.org/bfred-it/tiny-version-compare.svg?branch=master)](https://travis-ci.org/bfred-it/tiny-version-compare)
 
 > Compare two software versions, with any number of points (<1KB)
 
@@ -7,14 +7,14 @@ Supports most version types, from `r12.3` to `1.03.4.234567-RC4`. Development ve
 ## Install
 
 ```
-$ npm install loose-version-compare
+$ npm install tiny-version-compare
 ```
 
 
 ## Usage
 
 ```js
-const versionCompare = require('loose-version-compare');
+const versionCompare = require('tiny-version-compare');
 
 switch (versionCompare('1.2.3', '2.3.4')) {
 	case -1: console.log('Second one is greater'); break
