@@ -1,0 +1,32 @@
+{
+	"name": "loose-version-compare",
+	"version": "0.0.0",
+	"description": "Compare two software versions, with any number of points (<1KB)",
+	"license": "MIT",
+	"repository": "bfred-it/loose-version-compare",
+	"author": "Federico Brigante <github@bfred.it> (bfred.it)",
+	"keywords": [
+		"semver",
+		"version",
+		"compare",
+		"comparator",
+		"comparison",
+		"sort",
+		"sorter",
+		"browser",
+		"less",
+		"greater",
+		"cmp",
+		"node"
+	],
+	"files": [
+		"index.js"
+	],
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"devDependencies": {
+		"xo": "*",
+		"ava": "*"
+	}
+}
