@@ -30,7 +30,13 @@ switch (versionCompare('1.2.3', '2.3.4')) {
 ## API
 ### versionCompare(versionA, versionB)
 
-The function will return `-1` if `versionA` is greater, `1` if `versionB` is greater, `0` if the versions are equivalent.
+Returns `-1` if `versionA` is greater, `1` if `versionB` is greater, `0` if the versions are equivalent.
+
+#### versionA, versionB
+
+Type: `string`
+
+The versions to compare.
 
 ## License
 
