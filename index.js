@@ -31,7 +31,7 @@ const parsePart = part => {
 		default:
 	}
 
-	// Return as is, it’s either a number or any text we can’t sort
+	// Return as is, it’s either a plain number or text that will be sorted alphabetically
 	return part;
 };
 
