@@ -13,7 +13,7 @@ const offset = part => {
 		return part;
 	}
 
-	return 4 + Number(part);
+	return 5 + Number(part);
 };
 
 const parsePart = part => {
@@ -24,10 +24,11 @@ const parsePart = part => {
 
 	// Sort development versions
 	switch (part.toLowerCase()) {
-		case 'dev': return -4;
-		case 'alpha': return -3;
-		case 'beta': return -2;
-		case 'rc': return -1;
+		case 'dev': return -5;
+		case 'alpha': return -4;
+		case 'beta': return -3;
+		case 'rc': return -2;
+		case 'pre': return -1;
 		default:
 	}
 
