@@ -30,7 +30,8 @@ const developmentVersionPairs = [
 	['1.0-alpha.1', '1.0-alpha.2'],
 	['1.0-alpha1', '1.0-alpha2'],
 	['v2.0-RC4', 'v2.0'],
-	['v2.3.0-pre10', 'v2.3.0']
+	['v2.3.0-pre10', 'v2.3.0'],
+	['vPR3', 'v2.3.4']
 ];
 
 test('Equivalent versions', t => {

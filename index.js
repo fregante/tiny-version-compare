@@ -1,5 +1,5 @@
 const split = v => String(v)
-	.replace(/^\D+/, '') // Drop initial 'v' or 'r'
+	.replace(/^[vr]/, '') // Drop initial 'v' or 'r'
 	.replace(/([a-z]+)/gi, '.$1.') // Sort each word separately
 	.replace(/[-.]+/g, '.') // Consider dashes as separators (+ trim multiple separators)
 	.split('.');
