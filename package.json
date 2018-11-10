@@ -1,6 +1,6 @@
 {
 	"name": "tiny-version-compare",
-	"version": "0.9.1",
+	"version": "0.9.2",
 	"description": "Compare two software versions, with any number of points (<1KB)",
 	"license": "MIT",
 	"repository": "bfred-it/tiny-version-compare",
