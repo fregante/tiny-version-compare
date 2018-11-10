@@ -4,6 +4,8 @@
 
 Supports most version types, from `r12.3` to `1.03.4.234567-RC4`. Development versions are sorted as: `dev`, `alpha`, `beta`, `rc`
 
+Also [used by Refined GitHub](https://github.com/sindresorhus/refined-github/pull/1218).
+
 ## Install
 
 ```
