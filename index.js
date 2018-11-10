@@ -1,7 +1,9 @@
-const split = v => String(v)
+const splitDev = v => String(v).split('-');
+
+const splitSub = v => String(v)
 	.replace(/^[vr]/, '') // Drop initial 'v' or 'r'
 	.replace(/([a-z]+)/gi, '.$1.') // Sort each word separately
-	.replace(/[-.]+/g, '.') // Consider dashes as separators (+ trim multiple separators)
+	.replace(/[-.]+/g, '.') // Trim multiple separators
 	.split('.');
 
 // Development versions are considered "negative",
@@ -16,7 +18,7 @@ const offset = part => {
 	return 5 + Number(part);
 };
 
-const parsePart = part => {
+const parseSub = part => {
 	// Missing, consider it zero
 	if (typeof part === 'undefined') {
 		return 0;
@@ -36,15 +38,10 @@ const parsePart = part => {
 	return part;
 };
 
-module.exports = (a, b) => {
-	if (a === b) {
-		return 0;
-	}
-	a = split(a);
-	b = split(b);
+function compareSubs(a, b) {
 	for (let i = 0; i < a.length || i < b.length; i++) {
-		const ai = offset(parsePart(a[i]));
-		const bi = offset(parsePart(b[i]));
+		const ai = offset(parseSub(a[i]));
+		const bi = offset(parseSub(b[i]));
 		const sort = String(ai).localeCompare(bi, 'en', {
 			numeric: true
 		});
@@ -54,6 +51,31 @@ module.exports = (a, b) => {
 		if (sort !== 0) {
 			return sort;
 		}
+	}
+	return 0;
+}
+
+module.exports = (a, b) => {
+	if (a === b) {
+		return 0;
+	}
+	const [aMain, aDev] = splitDev(a).map(splitSub);
+	const [bMain, bDev] = splitDev(b).map(splitSub);
+
+	const mainSort = compareSubs(aMain, bMain);
+	if (mainSort !== 0) {
+		return mainSort;
+	}
+
+	if (aDev && !bDev) {
+		return -1;
+	}
+	if (!aDev && bDev) {
+		return 1;
+	}
+
+	if (aDev && bDev) {
+		return compareSubs(aDev, bDev);
 	}
 
 	// No difference found
