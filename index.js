@@ -37,6 +37,9 @@ const parsePart = part => {
 };
 
 module.exports = (a, b) => {
+	if (a === b) {
+		return 0;
+	}
 	a = split(a);
 	b = split(b);
 	for (let i = 0; i < a.length || i < b.length; i++) {
