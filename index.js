@@ -25,9 +25,9 @@ const parsePart = part => {
 	// Sort development versions
 	switch (part.toLowerCase()) {
 		case 'dev': return -5;
-		case 'alpha': return -4;
-		case 'beta': return -3;
-		case 'rc': return -2;
+		case 'alpha': case 'a': return -4;
+		case 'beta': case 'b': return -3;
+		case 'rc': case 'c': return -2;
 		case 'pre': return -1;
 		default:
 	}
