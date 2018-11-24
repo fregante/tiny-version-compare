@@ -3,7 +3,7 @@ const splitDev = v => String(v).split('-');
 const splitSub = v => String(v)
 	.replace(/^[vr]/, '') // Drop initial 'v' or 'r'
 	.replace(/([a-z]+)/gi, '.$1.') // Sort each word separately
-	.replace(/[-.]+/g, '.') // Trim multiple separators
+	.replace(/\.+/g, '.') // Trim repeating separators
 	.split('.');
 
 // Development versions are considered "negative",
