@@ -52,6 +52,7 @@ function compareSubs(a, b) {
 			return sort;
 		}
 	}
+
 	return 0;
 }
 
@@ -59,6 +60,7 @@ module.exports = (a, b) => {
 	if (a === b) {
 		return 0;
 	}
+
 	const [aMain, aDev] = splitDev(a).map(splitSub);
 	const [bMain, bDev] = splitDev(b).map(splitSub);
 
@@ -70,6 +72,7 @@ module.exports = (a, b) => {
 	if (aDev && !bDev) {
 		return -1;
 	}
+
 	if (!aDev && bDev) {
 		return 1;
 	}
