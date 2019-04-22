@@ -20,13 +20,15 @@
 		"node"
 	],
 	"files": [
-		"index.js"
+		"index.js",
+		"index.d.ts"
 	],
 	"scripts": {
-		"test": "xo && ava"
+		"test": "xo && ava && tsd"
 	},
 	"devDependencies": {
-		"xo": "*",
-		"ava": "*"
+		"ava": "*",
+		"tsd": "^0.7.2",
+		"xo": "*"
 	}
 }
