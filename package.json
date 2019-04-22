@@ -20,13 +20,29 @@
 		"node"
 	],
 	"files": [
-		"index.js"
+		"index.js",
+		"index.d.ts"
 	],
 	"scripts": {
-		"test": "xo && ava"
+		"test": "xo && ava && tsd"
 	},
 	"devDependencies": {
-		"xo": "*",
-		"ava": "*"
+		"@sindresorhus/tsconfig": "^0.3.0",
+		"@typescript-eslint/eslint-plugin": "^1.4.2",
+		"ava": "*",
+		"eslint-config-xo-typescript": "^0.9.0",
+		"tsd": "^0.7.2",
+		"xo": "*"
+	},
+	"xo": {
+		"extensions": [
+			"ts"
+		],
+		"overrides": [
+			{
+				"files": "**/*.ts",
+				"extends": "xo-typescript"
+			}
+		]
 	}
 }
