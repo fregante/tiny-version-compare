@@ -33,7 +33,7 @@
 		"eslint-config-xo-typescript": "^0.9.0",
 		"tsd": "^0.7.2",
 		"xo": "*"
-	}
+	},
 	"xo": {
 		"extensions": [
 			"ts"
