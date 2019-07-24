@@ -1,4 +1,4 @@
-# tiny-version-compare [![Build Status](https://travis-ci.org/bfred-it/tiny-version-compare.svg?branch=master)](https://travis-ci.org/bfred-it/tiny-version-compare)
+# tiny-version-compare [![Build Status](https://travis-ci.org/fregante/tiny-version-compare.svg?branch=master)](https://travis-ci.org/fregante/tiny-version-compare)
 
 > Compare two software versions, with any number of points (<1KB)
 
@@ -42,5 +42,5 @@ The versions to compare.
 
 ## License
 
-MIT © [Federico Brigante](http://twitter.com/bfred_it)
+MIT © [Federico Brigante](https://bfred.it)
 

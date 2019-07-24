@@ -2,37 +2,29 @@
 	"name": "tiny-version-compare",
 	"version": "1.0.0",
 	"description": "Compare two software versions, with any number of points (<1KB)",
-	"license": "MIT",
-	"repository": "bfred-it/tiny-version-compare",
-	"author": "Federico Brigante <github@bfred.it> (bfred.it)",
 	"keywords": [
-		"semver",
-		"version",
-		"compare",
+		"browser",
+		"cmp",
 		"comparator",
+		"compare",
 		"comparison",
+		"greater",
+		"less",
+		"node",
+		"semver",
 		"sort",
 		"sorter",
-		"browser",
-		"less",
-		"greater",
-		"cmp",
-		"node"
+		"version"
 	],
+	"repository": "fregante/tiny-version-compare",
+	"license": "MIT",
+	"author": "Federico Brigante <opensource@bfred.it> (bfred.it)",
 	"files": [
 		"index.js",
 		"index.d.ts"
 	],
 	"scripts": {
 		"test": "xo && ava && tsd"
-	},
-	"devDependencies": {
-		"@sindresorhus/tsconfig": "^0.3.0",
-		"@typescript-eslint/eslint-plugin": "^1.4.2",
-		"ava": "*",
-		"eslint-config-xo-typescript": "^0.9.0",
-		"tsd": "^0.7.2",
-		"xo": "*"
 	},
 	"xo": {
 		"extensions": [
@@ -44,5 +36,13 @@
 				"extends": "xo-typescript"
 			}
 		]
+	},
+	"devDependencies": {
+		"@sindresorhus/tsconfig": "^0.3.0",
+		"@typescript-eslint/eslint-plugin": "^1.4.2",
+		"ava": "*",
+		"eslint-config-xo-typescript": "^0.9.0",
+		"tsd": "^0.7.2",
+		"xo": "*"
 	}
 }
