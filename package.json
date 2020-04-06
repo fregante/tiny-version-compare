@@ -19,6 +19,9 @@
 	"repository": "fregante/tiny-version-compare",
 	"license": "MIT",
 	"author": "Federico Brigante <opensource@bfred.it> (bfred.it)",
+	"type": "module",
+	"main": "index.js",
+	"module": "index.js",
 	"files": [
 		"index.js",
 		"index.d.ts"
@@ -27,23 +30,16 @@
 		"test": "xo && ava && tsd"
 	},
 	"xo": {
-		"extensions": [
-			"ts"
-		],
-		"overrides": [
-			{
-				"files": "**/*.ts",
-				"extends": "xo-typescript"
-			}
-		]
+		"rules": {
+			"unicorn/import-index": "off",
+			"import/no-useless-path-segments": "off",
+			"import/extensions": "off"
+		}
 	},
 	"devDependencies": {
-		"@sindresorhus/tsconfig": "^0.3.0",
-		"@typescript-eslint/eslint-plugin": "^1.4.2",
-		"@typescript-eslint/parser": "^1.13.0",
-		"ava": "*",
-		"eslint-config-xo-typescript": "^0.9.0",
-		"tsd": "^0.7.2",
-		"xo": "*"
+		"@sindresorhus/tsconfig": "^0.7.0",
+		"ava": "^3.6.0",
+		"tsd": "^0.11.0",
+		"xo": "^0.28.3"
 	}
 }
