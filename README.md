@@ -1,4 +1,4 @@
-# tiny-version-compare [![Build Status](https://travis-ci.org/fregante/tiny-version-compare.svg?branch=master)](https://travis-ci.org/fregante/tiny-version-compare)
+# tiny-version-compare
 
 > Compare two software versions, with any number of points (<1KB)
 
