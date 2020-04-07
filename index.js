@@ -56,7 +56,7 @@ function compareSubs(a, b) {
 	return 0;
 }
 
-export default function (a, b) {
+module.exports = function (a, b) {
 	if (a === b) {
 		return 0;
 	}
@@ -83,4 +83,4 @@ export default function (a, b) {
 
 	// No difference found
 	return 0;
-}
+};

@@ -1,5 +1,5 @@
-import test from 'ava';
-import fn from './index.js';
+const test = require('ava');
+const fn = require('.');
 
 const equivalentVersions = [
 	'1',

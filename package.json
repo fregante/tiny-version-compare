@@ -19,22 +19,12 @@
 	"repository": "fregante/tiny-version-compare",
 	"license": "MIT",
 	"author": "Federico Brigante <opensource@bfred.it> (bfred.it)",
-	"type": "module",
-	"main": "index.js",
-	"module": "index.js",
 	"files": [
 		"index.js",
 		"index.d.ts"
 	],
 	"scripts": {
 		"test": "xo && ava && tsd"
-	},
-	"xo": {
-		"rules": {
-			"unicorn/import-index": "off",
-			"import/no-useless-path-segments": "off",
-			"import/extensions": "off"
-		}
 	},
 	"devDependencies": {
 		"@sindresorhus/tsconfig": "^0.7.0",

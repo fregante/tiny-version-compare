@@ -9,4 +9,5 @@
  *
  * @returns Returns -1 if versionA is greater, 1 if versionB is greater, 0 if the versions are equivalent.
  */
-export default function compareVersions(versionA: string, versionB: string): number;
+declare function compareVersions(versionA: string, versionB: string): number;
+export = compareVersions;
