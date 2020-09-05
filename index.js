@@ -56,7 +56,7 @@ function compareSubs(a, b) {
 	return 0;
 }
 
-module.exports = function (a, b) {
+function compareVersions(a, b) {
 	if (a === b) {
 		return 0;
 	}
@@ -83,4 +83,6 @@ module.exports = function (a, b) {
 
 	// No difference found
 	return 0;
-};
+}
+
+module.exports = compareVersions;
