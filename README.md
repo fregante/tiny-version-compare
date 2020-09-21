@@ -2,7 +2,7 @@
 
 > Compare two software versions, with any number of points (<1KB)
 
-Supports most version types, from `r12.3` to `1.03.4.234567-RC4`. Development versions are sorted as: `dev`, `alpha`, `beta`, `rc`
+Supports most version types, from `r12.3` to `1.03.4.234567-RC4`. Development versions are sorted as: `dev`, `alpha`, `beta`, `rc`, `pre`.
 
 Also [used by Refined GitHub](https://github.com/sindresorhus/refined-github/pull/1218).
 
