@@ -7,7 +7,7 @@
  *
  * @param versionB A version to compare.
  *
- * @returns Returns -1 if versionA is greater, 1 if versionB is greater, 0 if the versions are equivalent.
+ * @returns Returns -1 if versionB is greater, 1 if versionA is greater, 0 if the versions are equivalent.
  */
 declare function compareVersions(versionA: string, versionB: string): number;
 export = compareVersions;
