@@ -1,6 +1,6 @@
 {
 	"name": "tiny-version-compare",
-	"version": "3.0.2",
+	"version": "4.0.0",
 	"description": "Compare two software versions, with any number of points (<1KB)",
 	"keywords": [
 		"browser",
