@@ -20,6 +20,7 @@
 	"funding": "https://github.com/sponsors/fregante",
 	"license": "MIT",
 	"author": "Federico Brigante <me@fregante.com> (https://fregante.com)",
+	"type": "module",
 	"files": [
 		"index.js",
 		"index.d.ts"
@@ -35,7 +36,7 @@
 	},
 	"xo": {
 		"rules": {
-			"unicorn/no-fn-reference-in-iterator": "off",
+			"unicorn/no-array-callback-reference": "off",
 			"unicorn/prefer-number-properties": "off"
 		}
 	}

@@ -10,7 +10,7 @@ Is it giving the wrong order? Test it out with https://npm.runkit.com/tiny-versi
 
 Use this template:
 
-const tinyVersionCompare = require("tiny-version-compare");
+import tinyVersionCompare from "tiny-version-compare";
 console.assert(
     tinyVersionCompare('1.0.0-b2', '1.0.0') === -1,
     '-b2 should be lower'

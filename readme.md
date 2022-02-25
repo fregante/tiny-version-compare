@@ -16,7 +16,7 @@ $ npm install tiny-version-compare
 ## Usage
 
 ```js
-const compareVersions = require('tiny-version-compare');
+import compareVersions from 'tiny-version-compare';
 
 switch (compareVersions('1.2.3', '2.3.4')) {
 	case -1: console.log('Second one is greater'); break
@@ -45,4 +45,3 @@ The versions to compare.
 ## License
 
 MIT © [Federico Brigante](https://fregante.com)
-

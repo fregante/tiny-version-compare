@@ -43,7 +43,7 @@ function compareSubs(a, b) {
 		const ai = offset(parseSub(a[i]));
 		const bi = offset(parseSub(b[i]));
 		const sort = String(ai).localeCompare(bi, 'en', {
-			numeric: true
+			numeric: true,
 		});
 
 		// Once the difference is found,
@@ -56,7 +56,7 @@ function compareSubs(a, b) {
 	return 0;
 }
 
-function compareVersions(a, b) {
+export default function compareVersions(a, b) {
 	if (a === b) {
 		return 0;
 	}
@@ -84,5 +84,3 @@ function compareVersions(a, b) {
 	// No difference found
 	return 0;
 }
-
-module.exports = compareVersions;

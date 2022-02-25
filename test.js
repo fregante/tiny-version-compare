@@ -1,5 +1,5 @@
-const test = require('ava');
-const fn = require('.');
+import test from 'ava';
+import fn from '.';
 
 const equivalentVersions = [
 	'1',
@@ -7,7 +7,7 @@ const equivalentVersions = [
 	'r1',
 	'1.0',
 	'1.0.0',
-	'1.0.0.0'
+	'1.0.0.0',
 ];
 
 const versionPairs = [
@@ -19,7 +19,7 @@ const versionPairs = [
 	['2.0', '10.0'],
 	['1.2.3', '1.22.3'],
 	['1.1.1.1.1', '1.1.1.1.2'],
-	['r1', 'r2']
+	['r1', 'r2'],
 ];
 
 const developmentVersionPairs = [
@@ -40,7 +40,7 @@ const developmentVersionPairs = [
 	['1.0-1', '1.0'],
 	['1.0-1', '1.0-2'],
 	['1.0-1', '1.0-2.0'],
-	['1.0-1.9', '1.0-2.0']
+	['1.0-1.9', '1.0-2.0'],
 ];
 
 test('Equivalent versions', t => {
