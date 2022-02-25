@@ -21,6 +21,7 @@
 	"license": "MIT",
 	"author": "Federico Brigante <me@fregante.com> (https://fregante.com)",
 	"type": "module",
+	"main": "index.js",
 	"files": [
 		"index.js",
 		"index.d.ts"
@@ -28,16 +29,16 @@
 	"scripts": {
 		"test": "xo && ava && tsd"
 	},
-	"devDependencies": {
-		"@sindresorhus/tsconfig": "^0.7.0",
-		"ava": "^3.12.1",
-		"tsd": "^0.13.1",
-		"xo": "^0.33.1"
-	},
 	"xo": {
 		"rules": {
 			"unicorn/no-array-callback-reference": "off",
 			"unicorn/prefer-number-properties": "off"
 		}
+	},
+	"devDependencies": {
+		"@sindresorhus/tsconfig": "^2.0.0",
+		"ava": "^4.0.1",
+		"tsd": "^0.19.1",
+		"xo": "^0.48.0"
 	}
 }
