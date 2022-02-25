@@ -44,5 +44,5 @@ The versions to compare.
 
 ## License
 
-MIT © [Federico Brigante](https://bfred.it)
+MIT © [Federico Brigante](https://fregante.com)
 

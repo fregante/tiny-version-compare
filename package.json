@@ -17,8 +17,9 @@
 		"version"
 	],
 	"repository": "fregante/tiny-version-compare",
+	"funding": "https://github.com/sponsors/fregante",
 	"license": "MIT",
-	"author": "Federico Brigante <opensource@bfred.it> (bfred.it)",
+	"author": "Federico Brigante <me@fregante.com> (https://fregante.com)",
 	"files": [
 		"index.js",
 		"index.d.ts"
